@@ -7,7 +7,7 @@ module.exports = function(blogWriter) {
      // console.log("m found",req.body);
         storeModel.create({
           name:name,
-          date:date,
+          dateAdded:date,
           comment:comment
         },function(err,store){
           if(err){

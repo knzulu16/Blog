@@ -1,10 +1,5 @@
 $(document).ready(function(){
-
-
-
-
 var postButton=$("#postButton").val();
-
 $("#postButton").click(function(){
   var blogerPerson=$("#blogerPerson").val();
   console.log(blogerPerson);
@@ -14,7 +9,7 @@ $("#postButton").click(function(){
   console.log(displayComments);
   var blogerDetails = {
     name:blogerPerson,
-    date:datePosted,
+    dateAdded:datePosted,
     comment:displayComments
   }
   console.log(blogerDetails);
@@ -28,4 +23,7 @@ $("#postButton").click(function(){
   console.log(result);
 
 })
-})
+
+$('.button-collapse').sideNav();
+
+});

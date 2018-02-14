@@ -18,8 +18,12 @@ mongoose.Promise=global.Promise;
 mongoose.connect(blogWriter);
 var BlogPost=exports.SaveComment=mongoose.model('SaveComment',{
     name:String,
-      date:Date,
-  comment:String
+  comment:String,
+  dateAdded:{
+    type:Date,
+    default:Date.now
+  }
+
 })
 
   return{
