@@ -26,4 +26,5 @@ $("#postButton").click(function(){
 
 $('.button-collapse').sideNav();
 
+
 });

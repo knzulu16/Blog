@@ -1,13 +1,41 @@
 body{
-  background-color: grey;
+  background-color: white;
 }
 
-    header, main, footer {
-      padding-left: 300px;
-    }
+nav {
+height: 30px;
+line-height: 30px;
+}
 
-    @media only screen and (max-width : 992px) {
-      header, main, footer {
-        padding-left: 0;
-      }
-    }
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+height: 30px;
+line-height: 30px;
+}
+
+nav .button-collapse i {
+height: 30px;
+line-height: 30px;
+}
+
+nav .brand-logo {
+font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 601px){
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 30px;
+    line-height: 30px;
+}
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}

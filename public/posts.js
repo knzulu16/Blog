@@ -2,7 +2,6 @@ $(document).ready(function(){
   console.log("THIS IS HAPPENING");
   var commentTemplate = document.getElementById('template').innerHTML;
   var template = Handlebars.compile(commentTemplate);
-
   $.ajax({
      url: 'http://localhost:5002/api/blog',
      type: 'GET',
@@ -13,7 +12,6 @@ $(document).ready(function(){
        console.log("I'm i getting the data",data);
       }
     });
-
 
     $(".like-button").on("click", function(e){
         var $counter = $(this).find(".count");

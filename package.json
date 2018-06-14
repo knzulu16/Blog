@@ -13,7 +13,9 @@
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
+    "material-ui": "^0.20.0",
     "materialize-css": "^0.100.2",
+    "materialize-social": "^1.0.3",
     "mongoose": "^5.0.3"
   },
   "devDependencies": {}
